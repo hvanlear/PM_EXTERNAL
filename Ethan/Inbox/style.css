@@ -1,0 +1,127 @@
+:root{
+    --text-color:rgba(34,42,66,.7);
+    --success-text:#0d6832;
+    --primary-text:#273e63;
+    --warning-text:#73510d;
+    --danger-text: #A61001;
+    --success-bg:#d6f0e0;
+    --primary-bg:#dfe7f6;
+    --warning-bg:#fbf0da;
+    --danger-bg: #FFEBE9;
+    --primary-btn-text:#3b71ca;
+}
+
+*{
+    /* color:var(--text-color); */
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    background-color: #f5f6f8bb !important;
+    height: 100vh;
+    
+}
+
+.text-primary{
+    color:var(--primary-btn-text) !important;
+}
+
+.fw-bold{
+    font-weight: 500 !important;
+}
+
+h2{
+    font-weight: 400;
+    margin-bottom: unset;
+    
+}
+
+/* //Badge color overwirte */
+
+.badge-success{
+    color:var(--success-text);
+    background-color:var(--success-bg);
+}
+
+.badge-primary{
+    color:var(--primary-text);
+    background-color:var(--primary-bg);
+}
+
+.badge-warning{
+    color:var(--warning-text);
+    background-color:var(--warning-bg);
+}
+
+.badge-danger{
+    color:var(--danger-text);
+    background-color: var(--danger-bg);
+}
+
+
+
+/* //Badge color overwirte end */
+
+
+/* table styling */
+
+/* primary table container  */
+.table-container{
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 25%), 0px 2px 6px 2px rgb(60 64 67 / 10%);
+    padding:1rem;
+    border-radius: 12px;
+    background-color: white;
+}
+
+
+th{
+    padding:1rem .5rem !important;   
+   font-size: .875rem;
+    margin-bottom: 1rem !important;
+    background-color: white !important;
+    color:var(--text-color) !important;
+    font-weight: 600 !important;
+}
+
+th:last-child  {
+   border-top-right-radius: 12px;
+}
+
+ th:first-child  {
+   border-top-left-radius: 12px;
+}
+
+/* //Removes border from last table row */
+
+ tr td:last-child{
+    text-align: right;
+ }
+
+
+/* Changing TH bottom border color*/
+.table>:not(:last-child)>:last-child>* {
+     border-bottom-color: rgba(128, 128, 128, 0.277) !important;
+    
+}
+
+/* table styling end*/
+
+/*  button styling */
+.btn-link{
+    font-weight: 500;
+    color:var(--primary-text);
+    text-decoration: none;
+    /* border:1px solid #2c58a094 !important; */
+    border-radius: 8px;
+}
+
+.logout-btn{
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.page-link{
+    border: unset !important;
+    color:var(--primary-btn-text)
+}
